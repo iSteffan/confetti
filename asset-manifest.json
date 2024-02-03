@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/test-task-softryzen/static/css/main.f855e6bc.css",
+    "main.js": "/test-task-softryzen/static/js/main.9b34c57a.js",
+    "static/js/592.ef6ff8b0.chunk.js": "/test-task-softryzen/static/js/592.ef6ff8b0.chunk.js",
+    "static/media/logo.svg": "/test-task-softryzen/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/test-task-softryzen/index.html",
+    "main.f855e6bc.css.map": "/test-task-softryzen/static/css/main.f855e6bc.css.map",
+    "main.9b34c57a.js.map": "/test-task-softryzen/static/js/main.9b34c57a.js.map",
+    "592.ef6ff8b0.chunk.js.map": "/test-task-softryzen/static/js/592.ef6ff8b0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.9b34c57a.js"
+  ]
+}
