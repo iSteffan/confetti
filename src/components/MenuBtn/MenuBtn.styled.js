@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as burgerMenu } from '../../../assets/icons/burger-menu.svg';
+import { ReactComponent as burgerMenu } from '../../assets/icons/burger-menu.svg';
 
 export const Btn = styled.button`
   display: flex;

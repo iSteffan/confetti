@@ -15,11 +15,19 @@ export const HeaderTag = styled.header`
   outline: 1px solid gray;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    padding-top: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
+    padding-top: 37px;
+    padding-left: 112px;
+    padding-right: 112px;
+
+    max-width: 1280px;
   }
 `;
 
