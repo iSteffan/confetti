@@ -1,11 +1,11 @@
-import { Container, Text, Span } from './Hero.styled';
+import { Container, Text, Span, Balloon1 } from './Hero.styled';
 
 export const Hero = () => {
   return (
     <section>
       <Container>
         <Text>
-          Tworzymy unikalne i niepowtarzalne <Span>dekoracje balonowe</Span> na imprezy
+          Tworzymy unikalne <br />i niepowtarzalne <Span>dekoracje balonowe</Span> na imprezy
         </Text>
       </Container>
     </section>
