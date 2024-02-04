@@ -24,6 +24,7 @@ export const Container = styled.div`
   background-image: url(${HeroMobileBG});
   background-size: contain;
   background-repeat: no-repeat;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     margin-top: -63px;
@@ -98,16 +99,42 @@ export const Span = styled.span`
 
 export const Balloon1 = styled.img`
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 8%;
+  right: 61%;
 
-  width: 156px;
+  width: 233px;
   height: auto;
 
+  animation: ${balloonAnimation} 3s infinite;
+
   @media screen and (min-width: 768px) {
-    width: 273px;
+    top: 117px;
+    right: 547px;
+    width: 340px;
   }
 
   @media screen and (min-width: 1280px) {
+    display: none;
+  }
+`;
+
+export const Balloon2 = styled.img`
+  position: absolute;
+  top: 49%;
+  left: 55%;
+
+  width: 222px;
+  height: auto;
+
+  animation: ${balloonAnimation} 3s infinite;
+
+  @media screen and (min-width: 768px) {
+    top: 382px;
+    left: 464px;
+    width: 380px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 `;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { ReactComponent as burgerMenu } from '../../assets/icons/burger-menu.svg';
 
 export const Btn = styled.button`
+  position: relative;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -15,6 +16,7 @@ export const Btn = styled.button`
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 10;
 
   transition: color 0.3s ease;
 
