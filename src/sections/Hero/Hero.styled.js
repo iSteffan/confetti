@@ -55,7 +55,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Text = styled.p`
+export const Title = styled.h1`
   position: relative;
   display: block;
   padding-top: 212px;
@@ -69,6 +69,7 @@ export const Text = styled.p`
   font-family: 'Anzeigen Grotesk T';
   font-size: 40px;
   line-height: normal;
+  font-weight: 500;
   letter-spacing: -0.4px;
   text-transform: uppercase;
   z-index: 2;
