@@ -1,5 +1,6 @@
 import { Title, Text, Container } from './AboutUs.styled';
 import { AboutUsCardList } from '../../components/AboutUsCardList/AboutUsCardList';
+import { AboutUsSlider } from '../../components/AboutUsSlider/AboutUsSlider';
 
 export const AboutUs = () => {
   return (
@@ -10,7 +11,8 @@ export const AboutUs = () => {
           Młodzi i energiczni, rozwijający działalność w zakresie tworzenia dekoracji na imprezy i
           wydarzenia
         </Text>
-        <AboutUsCardList />
+        {/* <AboutUsCardList /> */}
+        <AboutUsSlider />
       </Container>
     </section>
   );

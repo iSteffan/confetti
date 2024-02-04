@@ -1,4 +1,4 @@
-import { Header, Hero, AboutUs } from './sections';
+import { Header, Hero, AboutUs, Reviews } from './sections';
 import { Main } from './App.styled';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <Main>
         <Hero />
         <AboutUs />
+        <Reviews />
       </Main>
     </>
   );

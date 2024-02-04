@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 24px;
-
   width: 320px;
   height: 253px;
 
@@ -22,7 +21,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.p`
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   font-family: 'Anzeigen Grotesk T';
   font-size: 24px;
@@ -34,6 +33,8 @@ export const Title = styled.p`
   white-space: pre-wrap;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+
     max-width: 330px;
 
     font-size: 40px;
