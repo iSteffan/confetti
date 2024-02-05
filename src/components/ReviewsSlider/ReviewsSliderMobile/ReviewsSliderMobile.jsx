@@ -1,12 +1,12 @@
-import { aboutUsCardData } from '../../data';
-import { AboutUsCard } from '../AboutUsCard/AboutUsCard';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css/pagination';
 import 'swiper/css';
+import { ReviewCard } from '../../ReviewCard/ReviewCard';
+import { reviewsData } from '../../../data';
 
-export const AboutUsSlider = () => {
+export const ReviewsSliderMobile = () => {
   return (
     <Swiper
       loop={true}
@@ -14,6 +14,7 @@ export const AboutUsSlider = () => {
       pagination={{
         clickable: true,
       }}
+      slidesPerView={1}
       modules={[Pagination]}
       className="mySwiper"
       style={{
@@ -25,10 +26,10 @@ export const AboutUsSlider = () => {
         '--swiper-pagination-bottom': '0px',
       }}
     >
-      {aboutUsCardData.map(data => {
+      {reviewsData.map(data => {
         return (
-          <SwiperSlide key={data.title}>
-            <AboutUsCard title={data.title} text={data.description} color={data.color} />
+          <SwiperSlide key={data.author}>
+            <ReviewCard author={data.author} text={data.text} />
           </SwiperSlide>
         );
       })}

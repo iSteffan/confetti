@@ -1,4 +1,4 @@
-import { aboutUsCardData } from '../../data/aboutUsCardData';
+import { aboutUsCardData } from '../../data';
 import { AboutUsCard } from '../AboutUsCard/AboutUsCard';
 import { List } from './AboutUsCardList.styled';
 
