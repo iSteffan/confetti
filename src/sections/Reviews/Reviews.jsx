@@ -8,7 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 
 export const Reviews = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  const isTablet = useMediaQuery({ minWidth: 767, maxWidth: 1279 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1279 });
   const isDesktop = useMediaQuery({ minWidth: 1280 });
 
   return (

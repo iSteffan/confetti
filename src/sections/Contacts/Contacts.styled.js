@@ -79,6 +79,18 @@ export const Text = styled.p`
   }
 `;
 
+export const ContactInfoContainer = styled.div`
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 380px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+`;
+
 export const PhoneLink = styled.a`
   display: inline-flex;
   align-items: center;
@@ -131,8 +143,6 @@ export const EmailLink = styled.a`
   justify-content: center;
   gap: 8px;
 
-  margin-bottom: 36px;
-
   color: #565148;
 
   text-align: center;
@@ -169,5 +179,62 @@ export const EmailIcon = styled(Sms)`
   ${EmailLink}:hover &,
   ${EmailLink}:focus & {
     stroke: #ed4b5e;
+  }
+`;
+
+export const BalloonsContainer = styled.div`
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+  /* overflow-x: hidden; */
+
+  @media screen and (min-width: 768px) {
+    margin-top: 88px;
+
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+`;
+
+export const Balloons1 = styled.img`
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    position: absolute;
+    top: -68px;
+    left: 0px;
+
+    width: 413px;
+    height: 420px;
+
+    transform: rotate(-9deg);
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+`;
+
+export const Balloons2 = styled.img`
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+
+    position: absolute;
+    top: 183px;
+    right: 0px;
+
+    width: 344px;
+    height: 350px;
+
+    transform: rotate(9deg);
+  }
+
+  @media screen and (min-width: 1280px) {
   }
 `;

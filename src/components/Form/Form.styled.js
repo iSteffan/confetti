@@ -6,6 +6,7 @@ import {
 } from 'formik';
 
 export const FormFormik = styled(FormikForm)`
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -16,6 +17,7 @@ export const FormFormik = styled(FormikForm)`
 
   max-width: 480px;
   background: #ffeff0;
+  z-index: 10;
 
   @media screen and (min-width: 768px) {
     gap: 32px;
@@ -64,32 +66,6 @@ export const Field = styled(FormikInput)`
     letter-spacing: -0.18px;
   }
 `;
-
-// export const TextArea = styled.textarea`
-//   padding: 20px 24px;
-
-//   width: 100%;
-//   height: 128px;
-//   color: #222;
-//   font-size: 20px;
-//   letter-spacing: -0.2px;
-//   border-radius: 9px;
-//   border: 1px solid #d2d2d2;
-//   background: #fff;
-//   resize: none;
-
-//   @media (min-width: 768px) {
-//     height: 136px;
-//   }
-
-//   &::placeholder {
-//     color: #888;
-
-//     font-size: 18px;
-//     line-height: normal;
-//     letter-spacing: -0.18px;
-//   }
-// `;
 
 export const TextArea = styled(FormikInput)`
   padding: 20px 24px;
