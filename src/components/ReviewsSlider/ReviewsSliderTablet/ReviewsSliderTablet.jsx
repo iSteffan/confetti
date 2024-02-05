@@ -6,22 +6,7 @@ import { SwiperNavButtons } from '../SwiperNavBtn/SwiperNavBtn';
 
 export const ReviewsSliderTablet = () => {
   return (
-    <Swiper
-      loop={true}
-      spaceBetween={30}
-      slidesPerView={2}
-      className="mySwiper"
-      //   style={
-      //     {
-      //       paddingBottom: '44px',
-      //       '--swiper-pagination-color': '#222',
-      //       '--swiper-pagination-bullet-inactive-color': '#222',
-      //       '--swiper-pagination-bullet-inactive-opacity': '0.25',
-      //       '--swiper-pagination-bullet-size': '8px',
-      //       '--swiper-pagination-bottom': '0px',
-      //     }
-      //   }
-    >
+    <Swiper loop={true} spaceBetween={30} slidesPerView={2} className="mySwiper">
       {reviewsData.map(data => {
         return (
           <SwiperSlide key={data.author}>

@@ -30,8 +30,18 @@ export const Text = styled.p`
   font-size: 18px;
   line-height: 130%;
   letter-spacing: -0.18px;
+  max-height: 140px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media screen and (min-width: 768px) {
+    max-height: 95px;
+  }
 
   @media screen and (min-width: 1280px) {
+    max-height: 160px;
+
     font-size: 24px;
     letter-spacing: -0.24px;
   }

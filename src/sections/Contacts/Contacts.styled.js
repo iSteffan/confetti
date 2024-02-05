@@ -1,19 +1,28 @@
 import styled from 'styled-components';
+import { ReactComponent as Phone } from '../../assets/icons/call.svg';
+import { ReactComponent as Sms } from '../../assets/icons/sms.svg';
 
-// export const Container = styled.div`
-//   margin-left: auto;
-//   margin-right: auto;
+export const Section = styled.section`
+  @media screen and (min-width: 1280px) {
+    margin-top: 200px;
+  }
+`;
 
-//   max-width: 320px;
+export const Container = styled.div`
+  margin-left: auto;
+  margin-right: auto;
 
-//   @media screen and (min-width: 768px) {
-//     max-width: 708px;
-//   }
+  max-width: 320px;
+  text-align: center;
 
-//   @media screen and (min-width: 1280px) {
-//     max-width: 1216px;
-//   }
-// `;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+`;
 
 export const Title = styled.h2`
   margin-top: 80px;
@@ -42,5 +51,123 @@ export const Title = styled.h2`
 
     font-size: 100px;
     letter-spacing: -1px;
+  }
+`;
+
+export const Text = styled.p`
+  margin-bottom: 24px;
+
+  text-align: center;
+  font-family: 'Anzeigen Grotesk T';
+  font-size: 28px;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+
+    font-size: 40px;
+    line-height: 95%;
+    letter-spacing: -0.4px;
+  }
+`;
+
+export const PhoneLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-bottom: 16px;
+
+  color: #565148;
+
+  text-align: center;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: #ed4b5e;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    color: #222;
+  }
+`;
+
+export const PhoneIcon = styled(Phone)`
+  stroke: #222222;
+
+  width: 24px;
+  height: 24px;
+
+  transition: stroke 0.3s ease;
+
+  ${PhoneLink}:hover &,
+  ${PhoneLink}:focus & {
+    stroke: #ed4b5e;
+  }
+`;
+
+export const EmailLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-bottom: 36px;
+
+  color: #565148;
+
+  text-align: center;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: #ed4b5e;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    color: #222;
+  }
+`;
+
+export const EmailIcon = styled(Sms)`
+  stroke: #222222;
+
+  width: 24px;
+  height: 24px;
+
+  transition: stroke 0.3s ease;
+
+  ${EmailLink}:hover &,
+  ${EmailLink}:focus & {
+    stroke: #ed4b5e;
   }
 `;
