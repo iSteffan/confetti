@@ -1,3 +1,4 @@
+import { Form } from '../../components/Form/Form';
 import {
   Title,
   Container,
@@ -10,6 +11,10 @@ import {
 } from './Contacts.styled';
 
 export const Contacts = () => {
+  const handleSubmit = data => {
+    console.log(data);
+  };
+
   return (
     <Section>
       <Container>
@@ -28,6 +33,7 @@ export const Contacts = () => {
           confettibalony@gmail.com
         </EmailLink>
       </Container>
+      <Form onSave={handleSubmit} />
     </Section>
   );
 };

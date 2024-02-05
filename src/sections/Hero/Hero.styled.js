@@ -21,18 +21,31 @@ const balloonAnimation = keyframes`
 export const Container = styled.div`
   position: relative;
   margin-top: -62px;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 480px;
+
   background-image: url(${HeroMobileBG});
   background-size: contain;
   background-repeat: no-repeat;
   overflow: hidden;
 
+  outline: 1px solid gray;
+
   @media screen and (min-width: 768px) {
     margin-top: -63px;
+
+    max-width: 768px;
+
     background-image: url(${HeroTabletBG});
   }
 
   @media screen and (min-width: 1280px) {
     margin-top: -69px;
+
+    max-width: 1280px;
+
     background-image: url(${HeroDesktopBG});
     background-size: contain;
     background-repeat: no-repeat;
