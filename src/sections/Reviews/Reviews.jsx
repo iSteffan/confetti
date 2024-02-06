@@ -12,7 +12,7 @@ export const Reviews = () => {
   const isDesktop = useMediaQuery({ minWidth: 1280 });
 
   return (
-    <section>
+    <section id="reviews">
       <Container>
         <Title>Recenzje</Title>
         {isMobile && <ReviewsSliderMobile />}

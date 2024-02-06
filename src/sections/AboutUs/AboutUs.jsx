@@ -7,7 +7,7 @@ export const AboutUs = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
-    <section>
+    <section id="about-us">
       <Container>
         <Title>Kreatywny zespół dekoratorów</Title>
         <Text>

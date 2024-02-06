@@ -7,6 +7,7 @@ export const Btn = styled.button`
   align-items: center;
   gap: 8px;
 
+  width: 77px;
   height: 24px;
   font-family: 'Anzeigen Grotesk T';
   font-size: 24px;
@@ -16,7 +17,7 @@ export const Btn = styled.button`
   border: none;
   background-color: transparent;
   cursor: pointer;
-  z-index: 10;
+  z-index: 12;
 
   transition: color 0.3s ease;
 
@@ -27,6 +28,9 @@ export const Btn = styled.button`
 `;
 
 export const MenuIcon = styled(burgerMenu)`
+  position: fixed;
+  margin-left: 53px;
+
   fill: #222222;
   stroke: #222222;
 

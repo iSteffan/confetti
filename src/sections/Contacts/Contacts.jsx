@@ -21,7 +21,7 @@ export const Contacts = () => {
   };
 
   return (
-    <Section>
+    <Section id="contacts">
       <Container>
         <ContactInfoContainer>
           <Title>Kontakty</Title>

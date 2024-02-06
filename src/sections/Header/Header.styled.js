@@ -41,3 +41,18 @@ export const LogoImage = styled.img`
   width: 104px;
   height: 32px;
 `;
+export const Title = styled.p`
+  color: #ed4b5e;
+
+  font-family: 'Anzeigen Grotesk T';
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+`;
+
+export const Btn = styled.button`
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+`;

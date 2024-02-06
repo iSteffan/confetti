@@ -1,4 +1,4 @@
-import { BalloonsLeftSide, BalloonsRightSide, balloons1, balloons2 } from '../../assets/images';
+import { BalloonsLeftSide, BalloonsRightSide } from '../../assets/images';
 import { Container, Title, Span, Balloon1, Balloon2, BalloonsContainer } from './Hero.styled';
 
 export const Hero = () => {

@@ -1,8 +1,8 @@
 import { Btn, MenuIcon } from './MenuBtn.styled';
 
-export const MenuBtn = () => {
+export const MenuBtn = ({ onClick }) => {
   return (
-    <Btn type="button">
+    <Btn type="button" onClick={onClick}>
       MENU
       <MenuIcon />
     </Btn>
