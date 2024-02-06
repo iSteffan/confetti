@@ -17,22 +17,26 @@ export const ContentContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
-  /* padding-left: 20px;
-  padding-right: 20px; */
+  padding-left: 20px;
+  padding-right: 20px;
 
   max-width: 480px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
 
-    max-width: 708px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 37px;
+    padding-left: 112px;
+    padding-right: 112px;
 
-    max-width: 1056px;
+    max-width: 1280px;
   }
 `;
 
@@ -40,6 +44,8 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  height: 32px;
 
   @media screen and (min-width: 768px) {
   }
@@ -56,6 +62,10 @@ export const Title = styled.p`
   line-height: normal;
   letter-spacing: -0.36px;
   text-transform: uppercase;
+
+  display: inline-block;
+  height: 32px;
+  margin-bottom: 12px;
 `;
 
 export const Btn = styled.button`

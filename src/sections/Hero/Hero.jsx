@@ -9,8 +9,8 @@ export const Hero = () => {
           Tworzymy unikalne <br />i niepowtarzalne <Span>dekoracje balonowe</Span> na imprezy
         </Title>
         <BalloonsContainer>
-          <Balloon1 src={BalloonsLeftSide} alt="balloons" />
-          <Balloon2 src={BalloonsRightSide} alt="balloons" />
+          <Balloon1 src={BalloonsLeftSide} srcSet={`${BalloonsLeftSide} 2x`} alt="balloons" />
+          <Balloon2 src={BalloonsRightSide} srcSet={`${BalloonsRightSide} 2x`} alt="balloons" />
         </BalloonsContainer>
       </Container>
     </section>

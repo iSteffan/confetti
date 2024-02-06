@@ -1,4 +1,9 @@
-import { BalloonsLeftSide, BalloonsRightSide } from '../../assets/images';
+import {
+  BalloonsLeftSide,
+  BalloonsLeftSide2x,
+  BalloonsRightSide,
+  BalloonsRightSide2x,
+} from '../../assets/images';
 import { Form } from '../../components/Form/Form';
 import {
   Title,
@@ -41,8 +46,8 @@ export const Contacts = () => {
         </ContactInfoContainer>
 
         <BalloonsContainer>
-          <Balloons1 src={BalloonsLeftSide} alt="balloons" />
-          <Balloons2 src={BalloonsRightSide} alt="balloons" />
+          <Balloons1 src={BalloonsLeftSide} srcSet={`${BalloonsLeftSide2x} 2x`} alt="balloons" />
+          <Balloons2 src={BalloonsRightSide} srcSet={`${BalloonsRightSide2x} 2x`} alt="balloons" />
 
           <Form onSave={handleSubmit} />
         </BalloonsContainer>

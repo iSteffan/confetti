@@ -4,6 +4,10 @@ import {
   HeroDesktopBG,
   HeroTabletBG,
   HeroDesktopBalloons,
+  HeroMobileBG2x,
+  HeroTabletBG2x,
+  HeroDesktopBG2x,
+  HeroDesktopBalloons2x,
 } from '../../assets/images';
 
 const balloonDesktopAnimation = keyframes`
@@ -55,7 +59,9 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   overflow: hidden;
 
-  outline: 1px solid gray;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(${HeroMobileBG2x});
+  }
 
   @media screen and (min-width: 768px) {
     margin-top: -63px;
@@ -63,6 +69,10 @@ export const Container = styled.div`
     max-width: 768px;
 
     background-image: url(${HeroTabletBG});
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(${HeroTabletBG2x});
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -74,6 +84,10 @@ export const Container = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(${HeroDesktopBG2x});
+    }
 
     &::after {
       content: '';
@@ -88,6 +102,10 @@ export const Container = styled.div`
       background-position: 48% -10%;
 
       animation: ${balloonDesktopAnimation} 5s infinite;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(${HeroDesktopBalloons2x});
+      }
     }
   }
 `;

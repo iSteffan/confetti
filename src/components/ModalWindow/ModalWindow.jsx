@@ -21,16 +21,24 @@ export const ModalWindow = ({ toggleMenu }) => {
         </Wrapper>
         <List>
           <li>
-            <Link href="#header">główna</Link>
+            <Link href="#header" onClick={toggleMenu}>
+              główna
+            </Link>
           </li>
           <li>
-            <Link href="#about-us">O nas</Link>
+            <Link href="#about-us" onClick={toggleMenu}>
+              O nas
+            </Link>
           </li>
           <li>
-            <Link href="#reviews">Recenzje</Link>
+            <Link href="#reviews" onClick={toggleMenu}>
+              Recenzje
+            </Link>
           </li>
           <li>
-            <Link href="#contacts">Kontakty</Link>
+            <Link href="#contacts" onClick={toggleMenu}>
+              Kontakty
+            </Link>
           </li>
         </List>
       </ContentContainer>

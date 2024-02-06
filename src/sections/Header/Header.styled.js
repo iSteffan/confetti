@@ -12,7 +12,6 @@ export const HeaderTag = styled.header`
   width: 100%;
   background-color: transparent;
 
-  outline: 1px solid gray;
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
