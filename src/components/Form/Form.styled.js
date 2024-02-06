@@ -31,6 +31,7 @@ export const FormFormik = styled(FormikForm)`
 
 export const InputContainer = styled.div`
   position: relative;
+  text-align: start;
 `;
 
 export const Label = styled.label`

@@ -10,7 +10,7 @@ function App() {
         <Reviews />
         <Contacts />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

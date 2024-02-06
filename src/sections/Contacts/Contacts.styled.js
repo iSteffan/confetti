@@ -3,6 +3,8 @@ import { ReactComponent as Phone } from '../../assets/icons/call.svg';
 import { ReactComponent as Sms } from '../../assets/icons/sms.svg';
 
 export const Section = styled.section`
+  margin-top: 80px;
+
   @media screen and (min-width: 1280px) {
     margin-top: 200px;
   }
@@ -11,8 +13,9 @@ export const Section = styled.section`
 export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
 
-  max-width: 320px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
@@ -20,12 +23,17 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 35px;
+
+    max-width: 1216px;
   }
 `;
 
 export const Title = styled.h2`
-  margin-top: 80px;
   margin-bottom: 36px;
 
   color: #ed4b5e;
@@ -49,6 +57,7 @@ export const Title = styled.h2`
     margin-top: 0px;
     margin-bottom: 56px;
 
+    text-align: left;
     font-size: 100px;
     letter-spacing: -1px;
   }
@@ -73,6 +82,7 @@ export const Text = styled.p`
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
 
+    text-align: left;
     font-size: 40px;
     line-height: 95%;
     letter-spacing: -0.4px;
@@ -80,14 +90,20 @@ export const Text = styled.p`
 `;
 
 export const ContactInfoContainer = styled.div`
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
+  max-width: 320px;
+
+  @media screen and (min-width: 768px) {
     max-width: 380px;
   }
 
   @media screen and (min-width: 1280px) {
+    margin-left: 0;
+    margin-right: 0;
+
+    text-align: left;
   }
 `;
 
@@ -186,17 +202,26 @@ export const BalloonsContainer = styled.div`
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 36px;
-  /* overflow-x: hidden; */
+  padding-top: 36px;
+
+  width: 100%;
+  max-width: 480px;
+  overflow-x: hidden;
 
   @media screen and (min-width: 768px) {
-    margin-top: 88px;
+    padding-top: 88px;
 
     max-width: 768px;
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0px;
+
+    max-width: 608px;
+
+    overflow-x: visible;
   }
 `;
 
@@ -206,7 +231,7 @@ export const Balloons1 = styled.img`
   @media screen and (min-width: 768px) {
     display: inline-block;
     position: absolute;
-    top: -68px;
+    top: 20px;
     left: 0px;
 
     width: 413px;
@@ -216,6 +241,11 @@ export const Balloons1 = styled.img`
   }
 
   @media screen and (min-width: 1280px) {
+    top: -87px;
+    left: -140px;
+
+    width: 461px;
+    height: 469px;
   }
 `;
 
@@ -226,7 +256,7 @@ export const Balloons2 = styled.img`
     display: inline-block;
 
     position: absolute;
-    top: 183px;
+    top: 271px;
     right: 0px;
 
     width: 344px;
@@ -236,5 +266,10 @@ export const Balloons2 = styled.img`
   }
 
   @media screen and (min-width: 1280px) {
+    top: 190px;
+    right: -93px;
+
+    width: 384px;
+    height: 391px;
   }
 `;
