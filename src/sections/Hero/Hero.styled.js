@@ -6,7 +6,7 @@ import {
   HeroDesktopBalloons,
 } from '../../assets/images';
 
-const balloonAnimation = keyframes`
+const balloonDesktopAnimation = keyframes`
   0% {
     transform: scale(1);
   }
@@ -15,6 +15,30 @@ const balloonAnimation = keyframes`
   }
   100% {
     transform: scale(1);
+  }
+`;
+
+const balloon1Animation = keyframes`
+  0% {
+    transform: scale(1) rotate(25deg);
+  }
+  50% {
+    transform: scale(1.03) rotate(25deg);
+  }
+  100% {
+    transform: scale(1) rotate(25deg);
+  }
+`;
+
+const balloon2Animation = keyframes`
+  0% {
+    transform: scale(1) rotate(16deg);
+  }
+  50% {
+    transform: scale(1.03) rotate(16deg);
+  }
+  100% {
+    transform: scale(1) rotate(16deg);
   }
 `;
 
@@ -63,7 +87,7 @@ export const Container = styled.div`
       background-repeat: no-repeat;
       background-position: 48% -10%;
 
-      animation: ${balloonAnimation} 5s infinite;
+      animation: ${balloonDesktopAnimation} 5s infinite;
     }
   }
 `;
@@ -107,48 +131,69 @@ export const Title = styled.h1`
   }
 `;
 
+export const BalloonsContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 360px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+`;
+
 export const Span = styled.span`
   color: #222;
 `;
 
 export const Balloon1 = styled.img`
   position: absolute;
-  top: 8%;
-  right: 61%;
+  top: 85px;
+  left: -56px;
 
-  width: 233px;
-  height: auto;
+  width: 155px;
+  height: 158px;
 
-  animation: ${balloonAnimation} 3s infinite;
+  transform: rotate(25deg);
+
+  animation: ${balloon1Animation} 3s infinite;
 
   @media screen and (min-width: 768px) {
-    top: 117px;
-    right: 547px;
-    width: 340px;
-  }
+    top: 142px;
+    left: -80px;
 
-  @media screen and (min-width: 1280px) {
-    display: none;
+    width: 273px;
+    height: 278px;
   }
 `;
 
 export const Balloon2 = styled.img`
   position: absolute;
-  top: 49%;
-  left: 55%;
+  top: 323px;
 
-  width: 222px;
-  height: auto;
+  right: -33px;
 
-  animation: ${balloonAnimation} 3s infinite;
+  width: 178px;
+  height: 181px;
+
+  transform: rotate(16deg);
+
+  animation: ${balloon2Animation} 3s infinite;
 
   @media screen and (min-width: 768px) {
-    top: 382px;
-    left: 464px;
-    width: 380px;
-  }
+    top: 415px;
+    right: -37px;
 
-  @media screen and (min-width: 1280px) {
-    display: none;
+    width: 306px;
+    height: 312px;
   }
 `;
