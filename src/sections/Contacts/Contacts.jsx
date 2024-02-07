@@ -46,8 +46,16 @@ export const Contacts = () => {
         </ContactInfoContainer>
 
         <BalloonsContainer>
-          <Balloons1 src={BalloonsLeftSide} srcSet={`${BalloonsLeftSide2x} 2x`} alt="balloons" />
-          <Balloons2 src={BalloonsRightSide} srcSet={`${BalloonsRightSide2x} 2x`} alt="balloons" />
+          <Balloons1
+            src={BalloonsLeftSide}
+            srcSet={`${BalloonsLeftSide} 1x, ${BalloonsLeftSide2x} 2x`}
+            alt="balloons"
+          />
+          <Balloons2
+            src={BalloonsRightSide}
+            srcSet={`${BalloonsRightSide} 1x, ${BalloonsRightSide2x} 2x`}
+            alt="balloons"
+          />
 
           <Form onSave={handleSubmit} />
         </BalloonsContainer>
