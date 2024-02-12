@@ -12,7 +12,6 @@ export const HeaderTag = styled.header`
   width: 100%;
   background-color: transparent;
 
-
   @media screen and (min-width: 768px) {
     padding-top: 32px;
     padding-left: 30px;
@@ -37,9 +36,14 @@ export const Container = styled.div`
 `;
 
 export const LogoImage = styled.img`
+  position: relative;
+
   width: 104px;
   height: 32px;
+
+  z-index: 12;
 `;
+
 export const Title = styled.p`
   color: #ed4b5e;
 

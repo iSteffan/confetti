@@ -7,10 +7,10 @@ export const SwiperNavButtons = () => {
 
   return (
     <Container>
-      <Btn onClick={() => swiper.slidePrev()}>
+      <Btn type="button" onClick={() => swiper.slidePrev()}>
         <SlideLeftIcon />
       </Btn>
-      <Btn onClick={() => swiper.slideNext()}>
+      <Btn type="button" onClick={() => swiper.slideNext()}>
         <SlideRightIcon />
       </Btn>
     </Container>

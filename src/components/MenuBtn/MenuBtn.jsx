@@ -4,7 +4,7 @@ export const MenuBtn = ({ onClick }) => {
   return (
     <Btn type="button" onClick={onClick}>
       MENU
-      <MenuIcon />
+      <MenuIcon aria-label='Open menu button'/>
     </Btn>
   );
 };

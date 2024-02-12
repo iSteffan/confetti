@@ -7,7 +7,9 @@ export const Header = ({ toggleMenu }) => {
   return (
     <HeaderTag id="header">
       <Container>
-        <LogoImage srcSet={`${logo2x} 2x`} src={logo} alt="logo" />
+        <a href="./" aria-label="Link to home page">
+          <LogoImage srcSet={`${logo} 1x, ${logo2x} 2x`} src={logo} alt="logo" />
+        </a>
         <MenuBtn onClick={toggleMenu} />
       </Container>
     </HeaderTag>

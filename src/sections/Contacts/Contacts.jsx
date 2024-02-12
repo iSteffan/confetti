@@ -35,11 +35,11 @@ export const Contacts = () => {
             Dekoracij Balonami  <br />
             Warszawa 
           </Text>
-          <PhoneLink href="tel:+48793351407">
+          <PhoneLink href="tel:+48793351407" aria-label="Make a call">
             <PhoneIcon />
             +48 793 351 407 
           </PhoneLink>
-          <EmailLink href="mailto:confettibalony@gmail.com">
+          <EmailLink href="mailto:confettibalony@gmail.com" aria-label="Send email">
             <EmailIcon />
             confettibalony@gmail.com
           </EmailLink>
