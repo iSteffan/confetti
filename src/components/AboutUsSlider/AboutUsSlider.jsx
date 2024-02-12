@@ -1,10 +1,10 @@
+import 'swiper/css/pagination';
+import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { aboutUsCardData } from '../../data';
 import { AboutUsCard } from '../AboutUsCard/AboutUsCard';
 import { Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css/pagination';
-import 'swiper/css';
 
 export const AboutUsSlider = () => {
   return (

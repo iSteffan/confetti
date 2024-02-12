@@ -1,5 +1,5 @@
-import { Container, AuthorContainer, Text, Icon, AuthorName } from './ReviewCard.styled';
 import { userTag } from '../../assets/icons';
+import { Container, AuthorContainer, Text, Icon, AuthorName } from './ReviewCard.styled';
 
 export const ReviewCard = ({ author, text }) => {
   return (

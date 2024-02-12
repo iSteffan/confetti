@@ -46,12 +46,6 @@ export const Wrapper = styled.div`
   align-items: center;
 
   height: 32px;
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1280px) {
-  }
 `;
 
 export const Title = styled.p`

@@ -16,10 +16,6 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  /* margin-left: auto;
-  margin-right: auto;
-
-  max-width: 320px; */
   text-align: center;
   font-family: 'Anzeigen Grotesk T';
   font-size: 36px;
@@ -29,15 +25,11 @@ export const Title = styled.h2`
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
-    /* max-width: 584px; */
-
     font-size: 48px;
     letter-spacing: -0.48px;
   }
 
   @media screen and (min-width: 1280px) {
-    /* max-width: 700px; */
-
     font-size: 56px;
     letter-spacing: -0.56px;
   }

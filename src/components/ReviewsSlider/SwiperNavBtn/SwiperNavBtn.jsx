@@ -7,11 +7,11 @@ export const SwiperNavButtons = () => {
 
   return (
     <Container>
-      <Btn type="button" onClick={() => swiper.slidePrev()}>
-        <SlideLeftIcon />
+      <Btn type="button" onClick={() => swiper.slidePrev()} aria-label="Move to the previous slide">
+        <SlideLeftIcon aria-label="Move to the previous slide icon" />
       </Btn>
-      <Btn type="button" onClick={() => swiper.slideNext()}>
-        <SlideRightIcon />
+      <Btn type="button" onClick={() => swiper.slideNext()} aria-label="Move to the next slide">
+        <SlideRightIcon aria-label="Move to the next slide icon" />
       </Btn>
     </Container>
   );

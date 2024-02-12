@@ -1,5 +1,4 @@
 import { logo, logo2x } from '../../assets/images';
-
 import { HeaderTag, LogoImage, Container } from './Header.styled';
 import { MenuBtn } from '../../components/MenuBtn/MenuBtn';
 

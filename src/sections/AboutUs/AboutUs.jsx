@@ -1,7 +1,7 @@
+import { useMediaQuery } from 'react-responsive';
 import { Title, Text, Container } from './AboutUs.styled';
 import { AboutUsCardList } from '../../components/AboutUsCardList/AboutUsCardList';
 import { AboutUsSlider } from '../../components/AboutUsSlider/AboutUsSlider';
-import { useMediaQuery } from 'react-responsive';
 
 export const AboutUs = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });

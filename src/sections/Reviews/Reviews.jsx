@@ -1,10 +1,10 @@
+import { useMediaQuery } from 'react-responsive';
 import {
   ReviewsSliderMobile,
   ReviewsSliderTablet,
   ReviewsSliderDesktop,
 } from '../../components/ReviewsSlider';
 import { Title, Container } from './Reviews.styled';
-import { useMediaQuery } from 'react-responsive';
 
 export const Reviews = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });

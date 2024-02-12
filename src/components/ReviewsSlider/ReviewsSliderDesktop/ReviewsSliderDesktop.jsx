@@ -1,8 +1,7 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
-import { ReviewCard } from '../../ReviewCard/ReviewCard';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { reviewsData } from '../../../data';
+import { ReviewCard } from '../../ReviewCard/ReviewCard';
 
 export const ReviewsSliderDesktop = () => {
   return (
