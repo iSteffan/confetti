@@ -1,18 +1,6 @@
 import styled from 'styled-components';
 import { ReactComponent as closeBurgerMenu } from '../../assets/icons/close-burger.svg';
 
-export const Overlay = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100vw;
-  height: 100vh;
-
-  background: #fff;
-  z-index: 20;
-`;
-
 export const ContentContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
@@ -20,6 +8,7 @@ export const ContentContainer = styled.div`
   padding-left: 20px;
   padding-right: 20px;
 
+  width: 100%;
   max-width: 480px;
   text-align: center;
 

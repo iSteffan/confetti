@@ -1,30 +1,27 @@
+import Drawer from '@mui/material/Drawer';
 import { Header, Hero, AboutUs, Reviews, Contacts, Footer } from './sections';
-import { ModalWindow } from './components/ModalWindow/ModalWindow';
+import { BurgerMenu } from './components/BurgerMenu/BurgerMenu';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
-  const [isModalVisible, setIsModalVisible] = useState(false);
+  // ---------------------------------------------------------------------------------MUI-DRAWER
+  const [state, setState] = useState({
+    openBurgerMenu: false,
+  });
 
-  const handleClick = () => {
-    setIsModalVisible(!isModalVisible);
-  };
-
-  useEffect(() => {
-    if (isModalVisible) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
+  const toggleDrawer = (anchor, open) => event => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
     }
 
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isModalVisible]);
+    setState({ ...state, [anchor]: open });
+  };
+  // ---------------------------------------------------------------------------------
 
   return (
     <>
-      <Header toggleMenu={handleClick} />
+      <Header toggleMenu={toggleDrawer('openBurgerMenu', true)} />
       <main>
         <Hero />
         <AboutUs />
@@ -32,7 +29,21 @@ function App() {
         <Contacts />
       </main>
       <Footer />
-      {isModalVisible && <ModalWindow toggleMenu={handleClick} />}
+
+      <Drawer
+        className="mui-fixed"
+        anchor="right"
+        open={state['openBurgerMenu']}
+        onClose={toggleDrawer('openBurgerMenu', false)}
+        hideBackdrop={true}
+        sx={{
+          '& .MuiDrawer-paper': {
+            position: 'relative',
+          },
+        }}
+      >
+        <BurgerMenu anchor="openBurgerMenu" onClose={toggleDrawer('openBurgerMenu', false)} />
+      </Drawer>
     </>
   );
 }
