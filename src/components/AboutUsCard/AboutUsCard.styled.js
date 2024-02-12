@@ -54,6 +54,11 @@ export const Text = styled.p`
   letter-spacing: -0.16px;
   white-space: pre-wrap;
 
+  @media screen and (max-width: 767px) {
+    max-height: 120px;
+    overflow: hidden;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 20px;
     letter-spacing: -0.2px;

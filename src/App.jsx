@@ -1,8 +1,7 @@
 import Drawer from '@mui/material/Drawer';
+import { useState } from 'react';
 import { Header, Hero, AboutUs, Reviews, Contacts, Footer } from './sections';
 import { BurgerMenu } from './components/BurgerMenu/BurgerMenu';
-
-import { useState } from 'react';
 
 function App() {
   // ---------------------------------------------------------------------------------MUI-DRAWER
@@ -37,6 +36,7 @@ function App() {
         onClose={toggleDrawer('openBurgerMenu', false)}
         hideBackdrop={true}
         sx={{
+          position: 'fixed',
           '& .MuiDrawer-paper': {
             position: 'relative',
           },

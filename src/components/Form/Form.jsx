@@ -36,7 +36,7 @@ export const Form = ({ onSave }) => {
       {({ touched, errors }) => (
         <FormFormik>
           <InputContainer>
-            <Label>Imię*</Label>
+            <Label htmlFor="name">Imię*</Label>
             <Field
               name="name"
               id="name"
@@ -50,7 +50,7 @@ export const Form = ({ onSave }) => {
           </InputContainer>
 
           <InputContainer>
-            <Label>E-mail*</Label>
+            <Label htmlFor="email">E-mail*</Label>
             <Field
               name="email"
               id="email"
@@ -64,7 +64,7 @@ export const Form = ({ onSave }) => {
           </InputContainer>
 
           <InputContainer>
-            <Label>Wiadomość</Label>
+            <Label htmlFor="message">Wiadomość</Label>
             <TextArea
               name="message"
               id="message"
