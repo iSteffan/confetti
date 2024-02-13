@@ -1,7 +1,7 @@
 {
-  "name": "test-task-softryzen",
+  "name": "confetti",
   "version": "0.1.0",
-  "homepage": "https://iSteffan.github.io/test-task-softryzen",
+  "homepage": "https://iSteffan.github.io/confetti",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
