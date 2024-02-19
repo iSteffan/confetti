@@ -1,3 +1,4 @@
+import toast, { Toaster } from 'react-hot-toast';
 import {
   BalloonsLeftSide,
   BalloonsLeftSide2x,
@@ -22,6 +23,7 @@ import {
 
 export const Contacts = () => {
   const handleSubmit = data => {
+    toast.success(`Your data has been sent succesfully`);
     console.log(data);
   };
 
@@ -60,6 +62,7 @@ export const Contacts = () => {
           <Form onSave={handleSubmit} />
         </BalloonsContainer>
       </Container>
+      <Toaster />
     </Section>
   );
 };
